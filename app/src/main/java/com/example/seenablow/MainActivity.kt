@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
     var gender: String? = null
     var classes: String? = null
     //var intent: Intent? = null
+    //
     var isclick = false
     var navi_icon: ImageView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
