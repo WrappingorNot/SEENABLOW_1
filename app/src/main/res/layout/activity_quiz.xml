@@ -55,7 +55,7 @@
             android:layout_marginHorizontal="20dp"
             android:gravity="center_horizontal"
             android:paddingTop="15dp"
-            android:text="TextView"
+            android:text="문제"
             android:textColor="#000000"
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -80,7 +80,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5"
         app:layout_constraintVertical_bias="0.183">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_answer3"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -88,13 +88,15 @@
             android:background="@drawable/backgound_btnblue"
             android:elevation="20dp"
             android:fontFamily="@font/nanumsqacb"
+
             android:text="3"
             android:textSize="16sp"
+            app:backgroundTint="@color/purple_200"
             tools:ignore="SpeakableTextPresentCheck">
 
-        </Button>
+        </com.google.android.material.button.MaterialButton>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_answer2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -104,11 +106,12 @@
             android:fontFamily="@font/nanumsqacb"
             android:text="2"
             android:textSize="16sp"
+            app:backgroundTint="@color/purple_200"
             tools:ignore="SpeakableTextPresentCheck">
 
-        </Button>
+        </com.google.android.material.button.MaterialButton>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_answer1"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -119,9 +122,10 @@
             android:fontFamily="@font/nanumsqacb"
             android:text="1"
             android:textSize="16sp"
+            app:backgroundTint="@color/purple_200"
             tools:ignore="SpeakableTextPresentCheck">
 
-        </Button>
+        </com.google.android.material.button.MaterialButton>
     </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline

@@ -13,13 +13,12 @@ import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.seenablow.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
-    var card_nov: CardView? = null
-    var card_poem: CardView? = null
-    var card_news: CardView? = null
-    var card_column: CardView? = null
+    private lateinit var binding: ActivityMainBinding
+
     private var toolbar: Toolbar? = null
     private var drawerLayout: DrawerLayout? = null
     private var navigationView: NavigationView? = null
@@ -36,15 +35,29 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //해당 액티비티를 잠금화면에 띄워줌
-        setContentView(R.layout.activity_main)
-        card_nov = findViewById<CardView>(R.id.card_nov)
-        card_poem = findViewById<CardView>(R.id.card_poem)
-        card_news = findViewById<CardView>(R.id.card_news)
-        card_column = findViewById<CardView>(R.id.card_column)
-        drawerLayout = findViewById<DrawerLayout>(R.id.drawer_layout)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+
+
+        binding.cardNov!!.setOnClickListener {
+            MoveIntent()
+        }
+        binding.cardPoem!!.setOnClickListener {
+            MoveIntent()
+        }
+
+        binding.cardNews!!.setOnClickListener {
+           MoveIntent()
+        }
+
+        binding.cardColumn!!.setOnClickListener {
+            MoveIntent()
+        }
+
         intent = getIntent()
-        navigationView = findViewById<View>(R.id.naviView) as NavigationView
-        navigationView!!.setNavigationItemSelectedListener { item: MenuItem ->
+
+        binding.naviView!!.setNavigationItemSelectedListener { item: MenuItem ->
             onOptionsItemSelected(
                 item
             )
@@ -111,6 +124,12 @@ class MainActivity : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
+
+    fun MoveIntent(){
+        val intent = Intent(this@MainActivity, NovActivity::class.java)
+        intent.putExtra("name", "news")
+        startActivity(intent)
+    }
     override fun onBackPressed() {
         val alert_ex = AlertDialog.Builder(this)
         alert_ex.setMessage("정말로 종료하시겠습니까?")

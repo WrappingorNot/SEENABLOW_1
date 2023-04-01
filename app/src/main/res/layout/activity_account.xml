@@ -11,7 +11,8 @@
     android:backgroundTint="#FFFFFF"
     android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="30dp"
-    tools:ignore="SpeakableTextPresentCheck">
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:context=".AccountActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
