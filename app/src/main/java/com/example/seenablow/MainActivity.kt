@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     private var toolbar: Toolbar? = null
-    private var drawerLayout: DrawerLayout? = null
+    private lateinit var drawerLayout: DrawerLayout
     private var navigationView: NavigationView? = null
     var navi_textview: TextView? = null
     var navi_textview2: TextView? = null
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        drawerLayout = binding.drawerLayout
 
         binding.cardNov!!.setOnClickListener {
             MoveIntent()
@@ -62,14 +62,11 @@ class MainActivity : AppCompatActivity() {
                 item
             )
         }
-        val nav_header_view = navigationView!!.getHeaderView(0)
-        navi_textview = nav_header_view.findViewById<View>(R.id.user_name) as TextView
-        val nav_header_view2 = navigationView!!.getHeaderView(0)
-        navi_textview2 = nav_header_view2.findViewById<View>(R.id.userinfo) as TextView
-        val nav_header_view3 = navigationView!!.getHeaderView(0)
-        navi_icon = nav_header_view3.findViewById<View>(R.id.navi_icon) as ImageView
+
         toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+
         //액션바 객체
         val actionBar = supportActionBar
         actionBar!!.setDisplayHomeAsUpEnabled(true)
@@ -84,6 +81,7 @@ class MainActivity : AppCompatActivity() {
         classes = sharedPreferences.getString("class", "")
 
     }
+
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         isclick = false
@@ -115,9 +113,7 @@ class MainActivity : AppCompatActivity() {
                 } else if (classes == "1") {
                     navi_icon!!.setImageResource(R.drawable.uni_8color)
                 }
-                navi_textview!!.text = username
-                navi_textview2!!.text = "$age 세 $gender"
-                drawerLayout!!.openDrawer(GravityCompat.START)
+                drawerLayout.openDrawer(GravityCompat.START)
                 return true
             }
         }
