@@ -10,5 +10,8 @@ class LockscreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLockscreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        binding.root
     }
 }
