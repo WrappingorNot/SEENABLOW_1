@@ -10,7 +10,6 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import com.example.seenablow.R
 
 class DataAdapter(var context: Context, var layout: Int, var data: List<DataVO>) : BaseAdapter() {
     var inflater //xml파일을 view객체로 변환하는 역활

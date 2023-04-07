@@ -3,7 +3,7 @@ package munmang.sdk.seenablow
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.seenablow.databinding.ActivityLockscreenBinding
+import munmang.sdk.seenablow.databinding.ActivityLockscreenBinding
 import java.util.*
 
 class LockscreenActivity : AppCompatActivity() {

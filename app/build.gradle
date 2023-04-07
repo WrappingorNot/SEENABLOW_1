@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.seenablow'
+    namespace 'munmang.sdk.seenablow'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.seenablow"
+        applicationId "munmang.sdk.seenablow"
         minSdk 24
         targetSdk 33
         versionCode 1

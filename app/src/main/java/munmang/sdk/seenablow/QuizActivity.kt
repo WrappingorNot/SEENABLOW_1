@@ -11,8 +11,7 @@ import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
-import com.example.seenablow.R
-import com.example.seenablow.databinding.ActivityQuizBinding
+import munmang.sdk.seenablow.databinding.ActivityQuizBinding
 import java.util.*
 
 class QuizActivity : AppCompatActivity() {

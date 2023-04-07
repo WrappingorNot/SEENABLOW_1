@@ -7,7 +7,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.android.volley.RequestQueue
 import com.android.volley.toolbox.Volley
-import com.example.seenablow.databinding.ActivitySignBinding
+import munmang.sdk.seenablow.databinding.ActivitySignBinding
 
 class SignActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignBinding

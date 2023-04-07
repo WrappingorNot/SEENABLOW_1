@@ -2,7 +2,7 @@ package munmang.sdk.seenablow
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.seenablow.databinding.ActivityNovBinding
+import munmang.sdk.seenablow.databinding.ActivityNovBinding
 
 class NovActivity : AppCompatActivity() {
     private lateinit var binding: ActivityNovBinding

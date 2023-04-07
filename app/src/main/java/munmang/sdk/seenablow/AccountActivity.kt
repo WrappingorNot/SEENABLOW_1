@@ -2,7 +2,7 @@ package munmang.sdk.seenablow
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.seenablow.databinding.ActivityAccountBinding
+import munmang.sdk.seenablow.databinding.ActivityAccountBinding
 
 class AccountActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAccountBinding
