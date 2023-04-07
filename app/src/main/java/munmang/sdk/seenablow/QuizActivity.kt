@@ -39,14 +39,13 @@ class QuizActivity : AppCompatActivity() {
         username = sharedPreferences.getString("username", "")
         url = "http://172.30.1.52:3002/solving?username="
         url += username
-        var array = arrayOfNulls<String>(3)
 
         ans1 = intent!!.getStringExtra("단어")
         ans2 = intent!!.getStringExtra("틀린답1")
         ans3 = intent!!.getStringExtra("틀린답2")
         quiz = intent!!.getStringExtra("뜻")
         binding.tvQuiz.setText(quiz)
-        array = arrayOf<String?>(ans1, ans2, ans3)
+        var array = arrayOf<String?>(ans1, ans2, ans3)
         val answer_array = arrayOf<Button?>(binding.btnAnswer1, binding.btnAnswer2, binding.btnAnswer3)
         Collections.shuffle(Arrays.asList(*answer_array))
         Collections.shuffle(Arrays.asList(*array))
