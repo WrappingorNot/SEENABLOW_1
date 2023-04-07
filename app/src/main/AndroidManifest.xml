@@ -12,21 +12,21 @@
         android:theme="@style/Theme.SEENABLOW"
         tools:targetApi="31">
         <activity
-            android:name=".QuizActivity"
+            android:name="munmang.sdk.seenablow.QuizActivity"
             android:exported="false" />
         <activity
-            android:name=".NovActivity"
+            android:name="munmang.sdk.seenablow.NovActivity"
             android:exported="false" />
         <activity
-            android:name=".AccountActivity"
+            android:name="munmang.sdk.seenablow.AccountActivity"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".LockscreenActivity"
+            android:name="munmang.sdk.seenablow.LockscreenActivity"
             android:exported="false" />
         <activity
-            android:name=".SignActivity"
+            android:name="munmang.sdk.seenablow.SignActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="munmang.sdk.seenablow.MainActivity"
             android:exported="true">
 
         </activity>

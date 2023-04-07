@@ -14,7 +14,7 @@
     android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="30dp"
     tools:ignore="SpeakableTextPresentCheck"
-    tools:context=".LockscreenActivity">
+    tools:context="munmang.sdk.seenablow.LockscreenActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
