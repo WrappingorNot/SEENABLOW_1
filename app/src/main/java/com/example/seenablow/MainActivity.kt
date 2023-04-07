@@ -41,18 +41,18 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = binding.drawerLayout
 
         binding.cardNov!!.setOnClickListener {
-            MoveIntent()
+            //MoveIntent()
         }
         binding.cardPoem!!.setOnClickListener {
-            MoveIntent()
+            //MoveIntent()
         }
 
         binding.cardNews!!.setOnClickListener {
-           MoveIntent()
+           //MoveIntent()
         }
 
         binding.cardColumn!!.setOnClickListener {
-            MoveIntent()
+            //MoveIntent()
         }
 
         intent = getIntent()

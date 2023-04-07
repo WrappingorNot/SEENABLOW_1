@@ -10,7 +10,7 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="570dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/Framelayout"
         app:layout_constraintEnd_toEndOf="parent"

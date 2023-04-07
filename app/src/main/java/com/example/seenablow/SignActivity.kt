@@ -13,13 +13,9 @@ import com.example.seenablow.databinding.ActivitySignBinding
 
 class SignActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignBinding
-    var et_username: EditText? = null
-    var et_age:EditText? = null
-    var rb_man: RadioButton? = null
-    var rb_woman:RadioButton? = null
+
     var requestQueue: RequestQueue? = null
-    var btn_signup: Button? = null
-    var rg_gender: RadioGroup? = null
+
     var gender: String? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,15 +45,7 @@ class SignActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(applicationContext, "성별을 선택하세요", Toast.LENGTH_SHORT).show()
                 }
-                var url = "http://172.30.1.52:3002/signup"
-                url += "?username=$username"
-                url += "&age=$age"
-                url += "&gender=$gender"
-                val request = StringRequest(
-                    Request.Method.GET,
-                    url,
-                    { }) { }
-                requestQueue!!.add<String>(request)
+
                 editor_data.putString("username", username)
                 editor_data.putString("age", age)
                 editor_data.putString("gender", gender)
